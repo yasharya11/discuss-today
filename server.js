@@ -143,7 +143,6 @@ app.get("/articles/:id", function(req, res) {
   });
 });
 
-
 // Delete an article
 app.post("/articles/delete/:id", function(req, res) {
       // Use the article id to find and update its saved boolean
@@ -160,7 +159,6 @@ app.post("/articles/delete/:id", function(req, res) {
         }
       });
 });
-
 
 // Create a new comment
 app.post("/comments/save/:id", function(req, res) {
