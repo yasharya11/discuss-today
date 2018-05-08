@@ -1,0 +1,31 @@
+{
+  "name": "mongoose_skeleton",
+  "version": "1.0.0",
+  "description": "This application scrapes NY Times for their articles and then displays then on a page which allows the user to see the article title, summary, and original link. As well as the ability to add / delete comments for each article",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.17",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasharya11/discuss-today.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasharya11/discuss-today/issues"
+  },
+  "homepage": "https://github.com/yasharya11/discuss-today#readme"
+}
