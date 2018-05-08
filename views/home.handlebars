@@ -15,6 +15,11 @@
                 <p> {{this.summary}}</p>
                 <a href={{this.link}} target="_blank">{{this.link}}</a>
             </div>
+            <div>
+                <button type="button" class="btn btn-success addComment" data-toggle="modal" data-target="#commentModal{{this._id}}" data-id={{this._id}}>Add a Comment</button>
+                <button type="button" class="btn btn-danger delete" data-id={{this._id}}>Delete</button>
+            </div>
+
         </div>
         {{/each}} {{else}}
         <div class="panel panel-default">
@@ -25,3 +30,6 @@
         {{/if}}
     </div>
 </div>
+
+<!--Clicked Notes Modal-->
+{{#each article}} {{> comments-modal }} {{/each}}
